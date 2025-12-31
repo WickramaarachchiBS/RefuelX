@@ -15,9 +15,9 @@ RefuelX is a convenient solution that allows users to order fuel delivery direct
 - Payment integration
 - User profile management
 
-## Screenshots
+<!--## Screenshots 
 
-[Add screenshots of your app here]
+[Add screenshots of your app here]  -->
 
 ## Getting Started
 
