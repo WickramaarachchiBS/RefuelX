@@ -1,3 +1,4 @@
+# Misc
 **/dgph
 *.mode1v3
 *.mode2v3
@@ -15,6 +16,9 @@ Icon?
 profile
 xcuserdata
 **/.generated/
+.DS_Store
+
+# Flutter
 Flutter/App.framework
 Flutter/Flutter.framework
 Flutter/Flutter.podspec
@@ -26,6 +30,17 @@ Flutter/flutter_assets/
 Flutter/flutter_export_environment.sh
 ServiceDefinitions.json
 Runner/GeneratedPluginRegistrant.*
+
+# Xcode / Build
+build/
+*.xcresult
+*.xccheckout
+*.xcscmblueprint
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.xcuserstate
 
 # Exceptions to above rules.
 !default.mode1v3
