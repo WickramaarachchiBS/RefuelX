@@ -2,7 +2,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:nikn_fuel/components/textfield_widget.dart';
 import 'package:nikn_fuel/services/firebase_auth.dart';
-import 'package:nikn_fuel/components/snakbarMessagePopup.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
