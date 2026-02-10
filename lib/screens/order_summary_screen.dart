@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:geolocator/geolocator.dart';
-import 'package:http/http.dart' as http;
-import 'dart:convert';
-import 'package:flutter_polyline_points/flutter_polyline_points.dart';
 import 'package:nikn_fuel/constants.dart';
 import 'package:nikn_fuel/services/stripe_services.dart';
 import 'package:nikn_fuel/screens/paymentUnsuccessfull_screen.dart';
@@ -44,7 +40,6 @@ class _OrderSummaryScreenState extends State<OrderSummaryScreen> {
   Set<Marker> _markers = {};
   Set<Polyline> _polylines = {};
   double? _roadDistance;
-  String? _travelTime;
 
   final GoogleServices _googleServices = GoogleServices();
 
@@ -99,7 +94,6 @@ class _OrderSummaryScreenState extends State<OrderSummaryScreen> {
       if (routeDetails.isNotEmpty) {
         setState(() {
           _roadDistance = routeDetails['distance'];
-          _travelTime = routeDetails['duration'];
           _polylines.add(routeDetails['polyline']);
         });
 
